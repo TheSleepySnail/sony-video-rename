@@ -1,0 +1,16 @@
+#!/bin/bash
+rm -rf target
+mkdir target
+go version
+go get -v
+echo "Build Windows x86-64"
+GOOS=windows GOARCH=amd64 go build -o target/SonyVideoRename-Windows_x86_64.exe cmd/main/main.go
+echo "Build Linux x86-64"
+GOOS=linux GOARCH=amd64 go build -o target/SonyVideoRename-Linux_x86_64 cmd/main/main.go
+echo "Build Mac x86-64"
+GOOS=darwin GOARCH=amd64 go build -o target/SonyVideoRename-macOS_x86_64 cmd/main/main.go
+echo "Build Mac arm"
+GOOS=darwin GOARCH=arm64 go build -o target/SonyVideoRename-macOS_arm cmd/main/main.go
+echo "Creating hash files"
+cd target
+find . -type f -exec bash -c 'sha256sum {} > {}.sha256' \;
