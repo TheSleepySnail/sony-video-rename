@@ -18,7 +18,7 @@ If you have recorded C0001, C0002, C0003 and you delete the C0002 -> the next ti
 Easiest way is to copy the executable into the folder where the videos files are located and run it from there in a terminal / command line
 
 ```
-Version 1.0.0
+Version 1.1.0-SNAPSHOT
   -c    Adding camera name to the new file name. E.g. _(XDR-200). (default true)
   -d    Dry run, just print out what this tool here would do without actually renaming files
   -f string
@@ -48,7 +48,7 @@ SonyVideoRename -d
 
 **Rename with time correction**
 
-Adding 1 hour and 5 minutes to the time. For an offset of more then 1 day just multiply the days with 24h ;)
+Adding 1 hour and 5 minutes to the time. For an offset of more than 1 day just multiply the days with 24h ;)
 
 ```
 SonyVideoRename -t=+1h5m0s

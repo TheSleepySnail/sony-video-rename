@@ -39,7 +39,7 @@ func (f *ToStringFormatter) Format(entry *logrus.Entry) ([]byte, error) {
 }
 
 func main() {
-	var version = "1.0.0"
+	var version = "1.1.0-SNAPSHOT"
 	var example = "Example usage: SonyVideoRename -d -s=MySuffix -o=false -f ~/MyVideos"
 	var helpFlag = flag.Bool("h", false, "Show this help")
 	var folderFlag = flag.String("f", ".", "Path to the folder where the files are. If not set -> Same folder where exe is executed")
