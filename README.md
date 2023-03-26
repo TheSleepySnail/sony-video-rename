@@ -18,7 +18,7 @@ If you have recorded C0001, C0002, C0003 and you delete the C0002 -> the next ti
 Easiest way is to copy the executable into the folder where the videos files are located and run it from there in a terminal / command line
 
 ```
-Version 1.0.0-SNAPSHOT
+Version 1.0.0
   -c    Adding camera name to the new file name. E.g. _(XDR-200). (default true)
   -d    Dry run, just print out what this tool here would do without actually renaming files
   -f string
